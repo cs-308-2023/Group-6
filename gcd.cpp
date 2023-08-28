@@ -13,3 +13,8 @@ int nonRecursiveGCD(int a, int b){
     return ans;
 
 }
+
+int recursiveGCD(int a, int b){
+    if (b == 0) return a;
+    return recursiveGCD(b, a % b);
+}
